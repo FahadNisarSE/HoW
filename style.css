@@ -1,0 +1,830 @@
+/* Variables */
+:root {
+  --font-sans: "Inter", Helvetica, sans-serif;
+  --font-serif: Iowan Old Style, Apple Garamond, Baskerville, Times New Roman,
+    Droid Serif, Times, Source Serif Pro, serif, Apple Color Emoji,
+    Segoe UI Emoji, Segoe UI Symbol;
+  --font-size: 18px;
+  --color-Brand1: #021f38;
+  --color-Brand2: #ff9700;
+  --color-dark: #333;
+  --color-light: #f2f2f2;
+  --transition-dur: 0.3s;
+}
+
+/* Typography */
+body {
+  font-family: var(--font-sans);
+  font-size: var(--font-size);
+  line-height: 1.5;
+}
+
+a {
+  text-decoration: none !important;
+  transition: var(--transition-dur);
+}
+
+.testimonial {
+  font-family: var(--font-serif);
+  font-size: 1.8rem;
+  font-style: italic;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.testimonial cite {
+  font-family: var(--font-sans);
+  font-weight: 600;
+  font-size: 1.2rem;
+  font-style: normal;
+}
+
+cite span {
+  color: #828282;
+}
+
+.spacer {
+  margin: 75px 0;
+}
+
+/* Button Styles */
+
+.btn.--bs-btn-color {
+  color: var(--color-Brand2) !important;
+}
+
+.btn {
+  padding: 20px 30px;
+  display: inline-block;
+  border: none;
+  transition: var(--transition-dur);
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+.btn:hover {
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
+}
+
+.btn.btn-primary {
+  color: #111;
+  background-color: var(--color-Brand2);
+  padding: 20px 50px;
+}
+
+.btn.btn-widget {
+  color: #111;
+  background-color: var(--color-Brand2);
+  margin-top: 7em;
+  position: absolute;
+  padding: 10px 15px !important;
+}
+
+.btn.btn-widget:hover {
+  color: #fff;
+  background-color: var(--color-Brand1);
+}
+
+.btn.btn-secondary {
+  color: #fff;
+  background-color: rgba(51, 51, 51, 0.1);
+}
+
+.btn.btn-invert {
+  color: #fff;
+  padding: 12px;
+  background-color: var(--color-Brand2);
+}
+
+@media only screen and (max-width: 768px) {
+  .btn.btn-invert {
+    margin-top: 1em !important;
+  }
+}
+
+.btn.btn-invert:hover {
+  box-shadow: 5px 5px 20px rgba(255, 255, 255, 0.4);
+  -webkit-box-shadow: 5px 5px 20px rgba(255, 255, 255, 0.4);
+  -moz-box-shadow: 5px 5px 20px rgba(255, 255, 255, 0.4);
+}
+
+/* Forms */
+
+input[type="text"] {
+  font-size: 1rem;
+  padding: 10px 5px;
+  border-radius: 5px;
+}
+
+/* Subscribe Bar */
+
+.subscribe-bar {
+  background-color: #111;
+  padding: 30px 0;
+}
+
+.subscribe-bar p {
+  color: #fff;
+  margin-bottom: 0;
+}
+
+@media screen and (max-width: 576px) {
+  .subscribe-bar p {
+    margin-bottom: 20px;
+  }
+}
+
+.subscribe-bar input,
+.subscribe-bar .btn {
+  width: 100%;
+  overflow: hidden;
+  display: inline-block;
+  border-radius: 5px !important;
+}
+
+.flex-vertical-center {
+  display: flex;
+  align-items: center;
+}
+
+/* Content Section */
+
+.content-area {
+  padding: 100px 0;
+}
+
+/* Post List */
+
+article.post {
+  margin: 50px 0;
+}
+
+.post .meta {
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: var(--color-Brand2);
+  margin-bottom: 8px;
+}
+
+body .post h2 a {
+  font-size: 3rem;
+  color: #111;
+}
+
+body .post h2 a:hover {
+  color: var(--color-Brand2) !important;
+}
+
+body .post h2:hover {
+  color: var(--color-Brand2) !important;
+}
+
+body .post p {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #828282;
+  line-height: 1.5;
+}
+
+body .post .read-more {
+  color: var(--color-Brand2);
+  font-size: 1.2rem;
+  font-weight: 500;
+  display: inline-block;
+  margin-top: 12px;
+  transition: var(--transition-dur);
+}
+
+body .post a.read-more:hover {
+  color: var(--color-Brand1);
+  padding-left: 5px;
+}
+
+/* Footer Section */
+
+.footer-calltoaction {
+  padding: 100px 0;
+  background: linear-gradient(350deg, var(--color-Brand1) 0%, #060094 100%);
+}
+
+.footer-calltoaction .sub-title {
+  color: var(--color-Brand2);
+}
+
+.footer-calltoaction h2 {
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+.footer-calltoaction p {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.footer-calltoaction .btn {
+  margin-top: 2rem;
+}
+
+.copyright {
+  padding: 50px 0;
+  background-color: #000;
+}
+
+.copyright p {
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 0;
+  font-weight: 500;
+}
+
+/* Elementor Widgets Styles */
+
+.title-wrapper .sub-title {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.title-wrapper .sub-title p {
+  color: red !important;
+}
+
+.sub-title {
+  margin: 0;
+  color: var(--color-Brand2);
+}
+
+.text-card {
+  position: relative;
+  overflow: hidden;
+  min-height: 335px;
+  padding: 35px 30px 100px;
+  margin-bottom: 20px;
+  border-radius: 20px;
+  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.15);
+}
+
+.text-card h4 {
+  color: #ff9700;
+}
+
+.text-card p {
+  font-size: 1rem;
+  color: #fff;
+}
+
+.text-card .overlay {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(100deg, var(--color-Brand1) 0%, #060094 100%);
+}
+
+.text-card.style-1 .overlay {
+  background: linear-gradient(100deg, var(--color-Brand1) 0%, #060094 100%);
+}
+
+.text-card.style-2 .overlay {
+  background: linear-gradient(100deg, #021f2a 0%, #060094 100%);
+}
+
+.text-card.style-3 .overlay {
+  background: linear-gradient(100deg, #000 0%, #060094 100%);
+}
+
+.text-card .overlay-image img {
+  width: 100%;
+  height: auto;
+  opacity: 0.5;
+}
+
+.text-card .overlay-image {
+  position: absolute;
+  transform: rotate(-45deg);
+  border-radius: 20px;
+  overflow: hidden;
+  width: 65%;
+  right: -15%;
+  bottom: -15%;
+  transition: var(--transition-dur);
+}
+
+.text-card:hover .overlay-image {
+  transform: rotate(-10deg);
+}
+
+.section-call-to-action {
+  position: relative;
+  text-align: center;
+  border-radius: 4px;
+  padding: 90px 100px;
+  margin: 20px 0;
+}
+
+.section-call-to-action .underlay-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+  border-radius: 40px;
+  background-color: #f2f2f2;
+}
+
+.section-call-to-action .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  border-radius: 40px;
+  overflow: hidden;
+  background: linear-gradient(100deg, var(--color-Brand1) 0%, #060094 100%);
+  transform: rotate(358deg);
+}
+
+.section-call-to-action .overlay-image img {
+  width: 100%;
+  height: auto;
+  opacity: 0.5;
+}
+
+.section-call-to-action .overlay-image {
+  position: absolute;
+  transform: rotate(25deg);
+  border-radius: 20px;
+  overflow: hidden;
+  width: 30%;
+  left: -4%;
+  bottom: -50%;
+  transition: var(--transition-dur);
+}
+
+.section-call-to-action:hover .overlay-image {
+  transform: rotate(21deg);
+}
+
+.section-call-to-action h2,
+.section-call-to-action .sub-title,
+.section-call-to-action p {
+  color: white;
+}
+
+.section-call-to-action .sub-title {
+  color: var(--color-Brand2);
+}
+
+.post-padding {
+  padding: 5em 0px;
+}
+
+.row-space {
+  padding-top: 5rem;
+}
+
+/**************************************************** New CSS ***********************************************************************/
+
+/******************** CSS FOR TOP NAV ********************/
+
+.loginDiv {
+  padding-top: 1em;
+}
+
+.loginText {
+  color: #000;
+  text-decoration: none;
+  font-size: 1em;
+  font-weight: 300;
+  padding-top: 2em !important;
+}
+
+hr {
+  height: 2px !important ;
+  color: black !important;
+  opacity: 1 !important;
+  margin: 0em 3em 0.3em 3em !important;
+}
+
+#topNav {
+  position: absolute;
+  top: 0;
+}
+
+.navbar {
+  padding-bottom: 0px !important;
+}
+
+.navbar-brand {
+  width: 13.4375em;
+  height: 3.83663em;
+}
+
+.navbar .megamenu {
+  padding: 2em;
+}
+
+.dropdown-menu {
+  border-radius: 0px !important;
+  margin-top: 0px !important;
+}
+
+a.nav-link.dropdown-toggle::after {
+  display: none !important;
+}
+
+.navbar-brand img {
+  height: 60px;
+}
+
+.nav-link,
+.applyBtn,
+.col-megamenu .title {
+  color: #000 !important;
+  font-family: var(--font-sans);
+  font-size: 1.23em;
+  font-weight: 700;
+}
+
+.nav-link {
+  padding: 0.2em 1.4em !important;
+}
+
+.searchIcon {
+  width: 2.5em !important;
+  height: 1.9875em !important;
+  margin-left: 2em;
+}
+
+.applyBtn {
+  background-color: #83be26;
+  border-radius: 18px;
+}
+
+.megamenu {
+  background-color: #f9c434 !important;
+}
+
+.nav-link:hover {
+  border: 2px solid black !important;
+  border-radius: 18px;
+}
+
+.col-megamenu .title {
+  margin-top: 1.5em;
+  margin-bottom: 0em;
+}
+
+.list-unstyled li a {
+  color: black !important;
+}
+
+/* Media Queries for top-nav */
+
+@media (min-width: 992px) and (max-width: 1200px) {
+  .nav-link,
+  .applyBtn,
+  .col-megamenu .title {
+    font-size: 1em;
+  }
+
+  .navbar-brand img {
+    height: 50px;
+  }
+
+  .navbar-brand {
+    width: 8.4375em;
+    height: 3.83663em;
+  }
+}
+
+@media all and (min-width: 992px) {
+  .navbar .has-megamenu {
+    position: static !important;
+  }
+
+  .navbar .megamenu {
+    width: 100%;
+  }
+}
+
+@media (max-width: 991px) {
+  .navbar.fixed-top .navbar-collapse,
+  .navbar.sticky-top .navbar-collapse {
+    overflow-y: auto;
+    max-height: 90vh;
+    margin-top: 10px;
+  }
+}
+
+/*****************************************************************/
+
+/*************** CSS FOR Title and Banner Section ***************/
+
+.title-banner {
+  padding: 8.5em 0;
+  background-image: url("assets/images/header-vector.png");
+  background-size: cover;
+}
+
+.banner {
+  max-width: 100% !important;
+  background: linear-gradient(rgba(61, 61, 61, 0.4), rgba(61, 61, 61, 0.4)),
+    transparent url(assets/images/new-how-background.jpg) center center/cover
+      no-repeat;
+}
+
+.titleDiv {
+  padding: 2em 0em;
+  margin: 2em;
+}
+
+.titleDiv h1 {
+  font-size: 9em;
+  font-weight: bolder;
+  color: white;
+}
+
+.title-banner .sub-title {
+  color: white;
+  text-align: left !important;
+  font-size: 2.7em;
+  font-weight: 700;
+}
+
+.bannerImg {
+  position: fixed;
+  right: 0px;
+  width: 6.07313em !important;
+  height: 10.47563em !important;
+  padding: 0px !important;
+  top: 248px;
+  z-index: 99;
+}
+
+/* Media Queries for title Banner */
+@media (max-width: 785px) {
+  .titleDiv h1 {
+    font-size: 2em;
+  }
+
+  .title-banner .sub-title {
+    font-size: 1em !important;
+  }
+
+  .bannerImg {
+    width: 3.07313em !important;
+    height: 7.47563em !important;
+    top: 168px;
+  }
+}
+
+@media (min-width: 786px) and (max-width: 992px) {
+  .titleDiv h1 {
+    font-size: 5em;
+  }
+  .bannerImg {
+    width: 5.07313em !important;
+    height: 8.47563em !important;
+    top: 192px;
+  }
+}
+
+/*****************************************************************/
+
+/*************** CSS FOR CAROUSEL SECTION ***************/
+
+.carouselContainer {
+  background-color: #d60f84;
+  height: 436px;
+  color: #000 !important;
+  padding: 1em 0em;
+}
+
+.carouselContainer .row h2 {
+  font-weight: 700;
+}
+
+.carouselImages {
+  width: 300px !important;
+  height: 376.22px !important;
+  object-fit: cover;
+}
+
+.item {
+  width: 300px !important;
+}
+
+.carImgText {
+  background-color: #83be26;
+  padding: 0.6em 1em;
+}
+
+/*****************************************************************/
+
+/********************* CSS FOR NEWS SECTION *********************/
+
+.newHeading {
+  font-size: 7.4em !important;
+  font-weight: 700;
+  color: #00354d !important;
+  padding-left: 2rem;
+}
+
+.newsSection .row {
+  padding: 8em 0em;
+}
+
+/*****************************************************************/
+
+/************************ CSS FOR FOOTER ************************/
+
+.socialIcons {
+  width: 45px;
+  height: 45px;
+  display: inline-block;
+}
+
+.socialIconsContainer {
+  padding: 2em 0.2em;
+}
+
+.ftLinksBold {
+  font-weight: 700;
+}
+
+.footerLinks {
+  list-style-type: none;
+}
+
+.ftLinksthin,
+.ftLinksBold {
+  color: #00354d !important;
+}
+
+.footerMenu {
+  background-color: #ed1558;
+  padding: 2em 3em 0em 3em !important;
+}
+
+#bttIcon {
+  width: 60px;
+  height: 60px;
+  position: relative;
+  bottom: 28px;
+}
+
+@media (max-width: 556px) {
+  #bttIcon {
+    bottom: 2px;
+  }
+}
+
+/*****************************************************************/
+
+/* ******************************************              Open To Public          ************************************************** */
+.open-to-public-body {
+  overflow-x: hidden;
+}
+
+.otp-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: url("assets/images/Shapes/bottomSlopedQuadlateral.svg") top center
+    no-repeat;
+    background-position: bottom center;
+  background-size: cover;
+  z-index: -1;
+}
+
+.otp-heading > h1 {
+  font-size: 6rem;
+  font-weight: 700;
+}
+
+.otp-section {
+  margin-top: 12rem;
+}
+
+.otp-image-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 4rem;
+}
+
+.otp-image-container > div {
+  position: relative;
+  width: fit-content;
+  margin-bottom: 4rem;
+}
+
+.otp-image-container > div:nth-child(2) {
+  align-self: flex-end;
+}
+
+.otp-image-info {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+  padding-right: 25%;
+}
+
+.otp-image-info:nth-child(2) {
+  padding-right: 0;
+  padding-left: 25%;
+}
+
+.otp-image-info > svg {
+  width: 30px;
+  height: 30px;
+}
+
+.otp-image-info > h3 {
+  color: var(--color-light);
+  font-size: 3.25rem;
+  font-weight: 700;
+}
+
+/************************** CSS FOR OPEN-EVENT PAGE  *******************************/
+
+
+.open-event-section {
+  margin-block: 6rem 10rem;
+}
+
+.open-event-images {
+  margin-top: 4rem;
+}
+
+.open-event-image {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.open-event-image > div {
+  position: absolute;
+  inset: auto 0 10px 0;
+  display: flex;
+  align-items: center;
+  padding-left: 20%;
+  gap: 5px;
+}
+
+.open-event-image > div > h3 {
+  color: var(--color-light);
+  font-size: 2.25rem;
+  font-weight: 700;
+}
+
+@media screen and (max-width: 1000px) {
+  .otp-image-container {
+    margin-top: 3rem;
+  }
+
+  .otp-image-container > div {
+    margin-bottom: 3rem;
+  }
+
+  .otp-heading > h1 {
+    font-size: 5rem;
+    font-weight: 700;
+  }
+
+  .otp-image-info > h3 {
+    color: var(--color-light);
+    font-size: 2.25rem;
+    font-weight: 700;
+  }
+
+  .otp-image-info > svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  .open-event-image > div > h3 > svg {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+@media screen and (max-width: 724px) {
+  .otp-image-info > h3 {
+    color: var(--color-light);
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+}
